@@ -240,4 +240,24 @@ footer p {
     font-size: 15px;
 }
 
+.store-content {
+  display: flex;
+}
 
+.filters {
+  width: 200px;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+
+.filter-section h4 {
+  margin-top: 10px;
+}
+
+.product-grid {
+  flex-grow: 1;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
