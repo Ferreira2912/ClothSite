@@ -126,8 +126,18 @@ nav a {
 }
 
 .product img {
-  width: 100%;
-  height: auto;
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.product a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #222;
+    font-size: smaller;
+    border-left: 2px solid #222;
+    padding: 3px 3px;
 }
 
 .brand-info {
@@ -217,3 +227,17 @@ footer {
     opacity: 0;
     z-index: -1;
 }
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+
