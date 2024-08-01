@@ -83,6 +83,10 @@ nav a {
   height: 100vh;
 }
 
+.hero p {
+  margin-right: 100px;
+}
+
 .hero .img-women {
   position: absolute;
   width: 100%;
