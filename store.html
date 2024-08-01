@@ -30,7 +30,7 @@
             <i class="fa-solid fa-magnifying-glass fa-sm"></i>
         </div>
             <div class="user-controls">
-                <a href="test"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
                 <a href="test2"><i class="fa-solid fa-heart fa-xl"></i></a>
                 <a href="test3"><i class="fa-solid fa-user fa-xl"></i></a>
             </div>
@@ -38,104 +38,107 @@
     </header>
 
     <div class="store-content">
-        <aside class="filters">
-            <h3>Filters</h3>
-            <div class="filters">
-                <label for="size">Size:</label>
-                <select id="size">
-                    <option value="all">All Sizes</option>
-                    <option value="small">Small</option>
-                    <option value="medium">Medium</option>
-                    <option value="large">Large</option>
-                </select>
-            
-                <label for="color">Color:</label>
-                <select id="color">
-                    <option value="all">All Colors</option>
-                    <option value="red">Red</option>
-                    <option value="blue">Blue</option>
-                    <option value="green">Green</option>
-                </select>
-            </div>
-        </aside>
-
-        <main class="product-grid">
-            <div class="product" data-size="medium">
+      <aside class="filter-section">
+        <h3 class="filter-title">Filters</h3>
+        <div class="filter-options">
+          <div class="filter-option">
+            <label for="size">Size:</label>
+            <select id="size" class="filter-select">
+              <option value="all">All Sizes</option>
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+          </div>
+          <div class="filter-option">
+            <label for="color">Color:</label>
+            <select id="color" class="filter-select">
+              <option value="all">All Colors</option>
+              <option value="red">Red</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+            </select>
+          </div>
+        </div>
+      </aside>
+        
+            <main class="product-grid">
+              <div class="productStore" data-size="medium" data-name="T-Shirt Classic" data-price="19.99">
                 <img src="/images/hoodie.png" alt="T-Shirt Classic" >
                 <p>T-Shirt Classic</p>
                 <span>$19.99</span>
                 <button onclick="addToCart(1)">Add to Cart</button>
-            </div>
-            <div class="product" data-size="medium">
+              </div>
+              <div class="productStore" data-size="medium">
                 <img src="/images/jacket.png" alt="Hoodie Comfort">
                 <p>Hoodie Comfort</p>
                 <span>$39.99</span>
                 <button onclick="addToCart(2)">Add to Cart</button>
-            </div>
-            <div class="product">
+              </div>
+              <div class="productStore">
                 <img src="/images/hoodie.png" alt="T-Shirt Classic" data-size="medium">
                 <p>T-Shirt Classic</p>
                 <span>$19.99</span>
                 <button onclick="addToCart(1)">Add to Cart</button>
-            </div>
-            <div class="product">
+              </div>
+              <div class="productStore">
                 <img src="/images/jacket.png" alt="Hoodie Comfort">
                 <p>Hoodie Comfort</p>
                 <span>$39.99</span>
                 <button onclick="addToCart(2)">Add to Cart</button>
-            </div>
-            <div class="product">
+              </div>
+              <div class="productStore">
                 <img src="/images/hoodie.png" alt="T-Shirt Classic">
                 <p>T-Shirt Classic</p>
                 <span>$19.99</span>
                 <button onclick="addToCart(1)">Add to Cart</button>
-            </div>
-            <div class="product">
+              </div>
+              <div class="productStore">
                 <img src="/images/jacket.png" alt="Hoodie Comfort">
                 <p>Hoodie Comfort</p>
                 <span>$39.99</span>
                 <button onclick="addToCart(2)">Add to Cart</button>
-            </div>
-            <div class="product">
+              </div>
+              <div class="productStore">
                 <img src="/images/hoodie.png" alt="T-Shirt Classic">
                 <p>T-Shirt Classic</p>
                 <span>$19.99</span>
                 <button onclick="addToCart(1)">Add to Cart</button>
-            </div>
-            <div class="product">
+              </div>
+              <div class="productStore">
                 <img src="/images/jacket.png" alt="Hoodie Comfort">
                 <p>Hoodie Comfort</p>
                 <span>$39.99</span>
                 <button onclick="addToCart(2)">Add to Cart</button>
-            </div>
-            <div class="product">
+              </div>
+              <div class="productStore">
                 <img src="/images/hoodie.png" alt="T-Shirt Classic">
                 <p>T-Shirt Classic</p>
                 <span>$19.99</span>
                 <button onclick="addToCart(1)">Add to Cart</button>
-            </div>
-            <div class="product">
+              </div>
+              <div class="productStore">
                 <img src="/images/jacket.png" alt="Hoodie Comfort">
                 <p>Hoodie Comfort</p>
                 <span>$39.99</span>
                 <button onclick="addToCart(2)">Add to Cart</button>
-            </div>
-            <div class="product">
+              </div>
+              <div class="productStore">
                 <img src="/images/hoodie.png" alt="T-Shirt Classic">
                 <p>T-Shirt Classic</p>
                 <span>$19.99</span>
                 <button onclick="addToCart(1)">Add to Cart</button>
-            </div>
-            <div class="product">
+              </div>
+              <div class="productStore">
                 <img src="/images/jacket.png" alt="Hoodie Comfort">
                 <p>Hoodie Comfort</p>
                 <span>$39.99</span>
                 <button onclick="addToCart(2)">Add to Cart</button>
-            </div>
-            <!-- More products as needed -->
-        </main>
-        
-    </div>
+              </div>
+              <!-- More products as needed -->
+            </main>
+            
+          </div>
 
     <footer>
       <p>Contact Us: echo@support.com</p>
@@ -144,4 +147,26 @@
 
     <script src="script.js"></script>
 </body>
+<script>
+  // Example item structure
+  const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+  
+  function addToCart(item) {
+    cartItems.push(item);
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    alert('Item added to cart!');
+  }
+  
+  // Example usage
+  document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const item = {
+        id: button.getAttribute('data-id'),
+        name: button.getAttribute('data-name'),
+        price: button.getAttribute('data-price')
+      };
+      addToCart(item);
+    });
+  });
+  </script>
 </html>
